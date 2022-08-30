@@ -1,0 +1,6 @@
+*.aux
+*-blx.bib
+*.out
+*.run.xml
+*.toc
+*.log
