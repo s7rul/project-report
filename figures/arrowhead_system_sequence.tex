@@ -1,10 +1,112 @@
-\documentclass[main.tex]{subfiles}
+\documentclass[../main.tex]{subfiles}
 \graphicspath{{pictures/}}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{tikz-timing}
+\usepackage{pgf-umlsd}
 \begin{document}
-\section{Introduction}
+\begin{figure}
+\centering
+        \resizebox{\textwidth}{!}{
+        \begin{sequencediagram}
+            \newthread{plan}{Mission planner}
+            \newthread{schedule}{Mission scheduler}
+            \newinst{exec}{Mission executor}
+            \newinst{gps}{GPS interface}
+            \newinst{vision}{Vision system}
+            \newinst{nav}{Navigation system}
+            \newinst{robot}{Robot control interface}
+            \newinst{acc}{Accessory control}
+            \newthread{bat}{Battery estimator}
+            \newinst{stop}{Stopper system}
 
-\textbf{Hello world!}
-
-Hello, here is some text without a meaning...
+            \mess{plan}{Add plow mission}{schedule}
+            \begin{call}
+                {schedule}{Do plow mission}{exec}{Ready}
+                \begin{call}
+                    {exec}{Navigate to start}{nav}{Done}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                \end{call}
+                \begin{call}
+                    {exec}{Start blower}{acc}{}
+                \end{call}
+                \begin{call}
+                    {exec}{Navigate path points}{nav}{Done}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \mess{nav}{Almost done}{exec}
+                    \mess{exec}{More points}{nav}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \mess{nav}{Almost done}{exec}
+                    \mess{exec}{More points}{nav}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \mess{nav}{Almost done}{exec}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                \end{call}
+                \begin{call}
+                    {exec}{Stop blower}{acc}{}
+                \end{call}
+            \end{call}
+            \mess{schedule}{Plow mission done}{plan}
+        \end{sequencediagram}
+        }
+    \caption{Sequence diagram for snowblower robot systems executing a plow mission.}
+\end{figure}
 
 \end{document}
