@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1666606167 "/home/s7rul/code/project/project-report/figures/arrowhead_system_sequence.tex" "figures/arrowhead_system_sequence.pdf" "arrowhead_system_sequence" 1666606168
-  "/home/s7rul/code/project/project-report/figures/arrowhead_system_sequence.tex" 1666606166 4314 1ca0c28c18dd88916827d5ebe655f054 ""
+["pdflatex"] 1666793205 "/home/s7rul/code/project/project-report/figures/arrowhead_system_sequence2.tex" "figures/arrowhead_system_sequence2.pdf" "arrowhead_system_sequence2" 1666793206
+  "/home/s7rul/code/project/project-report/figures/arrowhead_system_sequence2.tex" 1666793204 3572 aeaa48ee6fa3598b6ba987056eab44e1 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1650183167 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1650183167 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -113,10 +113,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1653050122 4408072 42ceaa83bae76aebad711d3f3dd7f55f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1653050089 2927659 602f6c240e47a6e07b13edbe8f02574e ""
-  "figures/../main.tex" 1666601762 1912 c880c24a9f55e95feb62af8b2a976ed5 ""
-  "figures/arrowhead_system_sequence.aux" 1666606168 206 3223bb08e03519e01488ae4b1e585a9c "pdflatex"
-  "figures/arrowhead_system_sequence.tex" 1666606166 4314 1ca0c28c18dd88916827d5ebe655f054 ""
+  "figures/../main.tex" 1666783787 1961 c89828371a33a9fb15737337e355ba69 ""
+  "figures/arrowhead_system_sequence2.aux" 1666793206 245 d1e71d0c5553ec086e069f733c61f0ee "pdflatex"
+  "figures/arrowhead_system_sequence2.tex" 1666793204 3572 aeaa48ee6fa3598b6ba987056eab44e1 ""
   (generated)
-  "figures/arrowhead_system_sequence.aux"
-  "figures/arrowhead_system_sequence.log"
-  "figures/arrowhead_system_sequence.pdf"
+  "figures/arrowhead_system_sequence2.aux"
+  "figures/arrowhead_system_sequence2.log"
+  "figures/arrowhead_system_sequence2.pdf"
