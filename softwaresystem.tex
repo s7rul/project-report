@@ -21,7 +21,7 @@ after this the design of each part is described in detail.
 \subsection{Overview}
 \label{sec:sw_design_overview}
 
-\begin{figure}
+\begin{figure}[H]
     \includegraphics[width=\textwidth]{software_overview.png}
     \caption{Overview of the software architecture.}
     \label{fig:software_overview}
@@ -29,9 +29,22 @@ after this the design of each part is described in detail.
 
 The design of the software system is made up of different parts and are shown in figure \ref{fig:software_overview}. 
 In figure \ref{fig:software_overview} each system is symbolized by a square with a describing name and
-lines symbolize communication between systems. Some communication lines are omitted for clarity,
-what other system each system communicates with is described in the more detailed description of the system design.
+lines symbolize communication between systems. Some communication lines are omitted for clarity, what other system each system communicates with is described in the more detailed description of the system design.
 
+The design was divided into 4 main parts, each part has its own color in figure \ref{fig:software_overview}:
+
+The safety critical part is shown in blue and controls the robot directly. 
+It's made up of mikrocontrollers running custom firmware written in rust using the RTIC framework (?ref?) except
+for the motor controllers that run the Vesc firmware (?ref?).
+This systems in this part communicate with each other using one single shared CANbus and communicate with all other systems over a UART link to the robotcontroller interface.
+
+The non safety critical part is shown in the green big rectangle.
+This part handles everything needed to do to carry out a mission and sends the proper commands to either the robot controller or the accessory. This part is made up of many interchangeable systems orchestrated in a Arrowhead local cloud (?ref?).
+
+The red part is the accessory, it controls the accessory directly and is a system in the local cloud.
+The accessory is designed to be able to be any kind of accessory. In out test case it is a snowblower.
+
+The last part in light green in the little cloud is a separate Arrowhead local cloud running on a server somewhere. It is designed to be the interface between the robot and the world being able to get telemetry from the robot and send missions for it to do.
 
 \subsection{Design of all the parts}
 
