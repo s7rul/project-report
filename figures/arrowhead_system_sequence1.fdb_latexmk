@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1671727129 "/home/s7rul/code/project/project-report/figures/arrowhead_system_sequence2.tex" "figures/arrowhead_system_sequence2.pdf" "arrowhead_system_sequence2" 1671727130
-  "/home/s7rul/code/project/project-report/figures/arrowhead_system_sequence2.tex" 1671727128 3510 72924cab2f29f5a6e6a92dba50eff958 ""
+["pdflatex"] 1671725327 "/home/s7rul/code/project/project-report/figures/arrowhead_system_sequence1.tex" "figures/arrowhead_system_sequence1.pdf" "arrowhead_system_sequence1" 1671725328
+  "/home/s7rul/code/project/project-report/figures/arrowhead_system_sequence1.tex" 1671725327 4314 1ca0c28c18dd88916827d5ebe655f054 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1650183167 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1650183167 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -114,9 +114,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1668504755 4408072 42ceaa83bae76aebad711d3f3dd7f55f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668504744 2927662 9146bfad2bf4bb7168f4c15b0b1ca519 ""
   "figures/../main.tex" 1671542182 1992 92c91c6b302dce5065a8c37986e00802 ""
-  "figures/arrowhead_system_sequence2.aux" 1671727130 278 e93871771c0dd26f6c1abdc89b37849f "pdflatex"
-  "figures/arrowhead_system_sequence2.tex" 1671727128 3510 72924cab2f29f5a6e6a92dba50eff958 ""
+  "figures/arrowhead_system_sequence1.aux" 1671725328 206 3223bb08e03519e01488ae4b1e585a9c "pdflatex"
+  "figures/arrowhead_system_sequence1.tex" 1671725327 4314 1ca0c28c18dd88916827d5ebe655f054 ""
   (generated)
-  "figures/arrowhead_system_sequence2.aux"
-  "figures/arrowhead_system_sequence2.log"
-  "figures/arrowhead_system_sequence2.pdf"
+  "figures/arrowhead_system_sequence1.aux"
+  "figures/arrowhead_system_sequence1.log"
+  "figures/arrowhead_system_sequence1.pdf"

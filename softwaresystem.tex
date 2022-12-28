@@ -90,6 +90,12 @@ The accessory is designed to be able to be any kind of accessory. In our test ca
 
 The last part in light green in the little cloud is a separate Arrowhead local cloud running on a server somewhere. It is designed to be the interface between the robot and the world being able to get telemetry from the robot and send missions for it to do.
 
+\subfile{figures/arrowhead_system_sequence2.tex}
+
+To show how the systems may work together a sequence diagram is shown in figure \ref{fig:sequence2}.
+In the sequence diagram the robot first do a mission where it navigates to a point and is preempted by a higher priority mission to charge the robot.
+The way preemption is handled is that the mission executor when it's get a new mission will construct a new mission that will carry out the work left on the current mission and send this new mission to the mission scheduler.
+
 \subsection{Design of all the parts}
 
 \subsubsection{Mission scheduler}
