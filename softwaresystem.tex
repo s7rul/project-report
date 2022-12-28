@@ -97,8 +97,55 @@ In the sequence diagram the robot first do a mission where it navigates to a poi
 The way preemption is handled is that the mission executor when it's get a new mission will construct a new mission that will carry out the work left on the current mission and send this new mission to the mission scheduler.
 
 \subsection{Design of all the parts}
+In this section the design of each system is described in detail.
 
 \subsubsection{Mission scheduler}
+The mission scheduler makes sure the missions are executed according to the following rules:
+\begin{enumerate}
+    \item A mission is sent to the executer only when it is ready or running a different mission.
+    \item When the mission executor is ready the pending mission with the highest priority is sent to the mission executor to execute, if there are more then one pending mission with the highest priority the one received first is sent.
+    \item If a mission with a priority higher then the one running on the mission executor is received it is directly sent to the mission executor.
+\end{enumerate}
+It provides the following services:
+
+\textbf{Add mission:}
+Add a mission to be scheduled.\\
+\textbf{Request}\\
+\begin{tabular}{|l|l|l|}
+    \hline
+    Name & datatype & description \\
+    \hline
+    \hline
+    priority & int & The priority of the mission. \\
+    \hline
+    mission & Mission & The mission to be scheduled \\
+    \hline
+\end{tabular} \\
+\textbf{Response}\\
+\begin{tabular}{|l|l|l|}
+    \hline
+    Name & datatype & description \\
+    \hline
+    \hline
+    status & Enum & Either ADDED or ERROR. \\
+    \hline
+\end{tabular}
+
+\textbf{Executor Ready:}
+Should only be used by the mission executer to indicate that it is ready. \\
+\textbf{Request}\\
+\begin{tabular}{|l|l|l|}
+    \hline
+    Name & datatype & description \\
+    \hline
+    \hline
+    status & Enum & Either READY or NOT\_READY. \\
+    \hline
+\end{tabular} \\
+\textbf{Response}\\
+The response is always the string "OK".
+
+
 
 \subsubsection{Mission executor}
 \label{sec:mission_executor}
