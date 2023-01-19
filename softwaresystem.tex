@@ -150,4 +150,45 @@ The response is always the string "OK".
 \subsubsection{Mission executor}
 \label{sec:mission_executor}
 
+The mission executor executes the mission by for each task sending the corresponding request to the corresponding system and wait until it is done.
+This system needs to know what service to call for each task type and whit what data. Therefore it can be seen as a translator between task and service call. It also need to know when the called service is done and this is done by sending a id with every service request and waiting until the same id is sent back in a Task done service request.
+It provide the following services:
+
+\textbf{Task done:}
+Is used by all systems consumed by the mission executor to tell it that the task is done.\\
+\textbf{Request}\\
+\begin{tabular}{|l|l|l|}
+    \hline
+    Name & datatype & description \\
+    \hline
+    \hline
+    id & long & The id of the task that is done. \\
+    \hline
+\end{tabular} \\
+\textbf{Response}\\
+A object with a status string = "ok".
+
+
+\section{Theory}
+Theory behind the design Arrowhead, SoS etc
+
+\section{Methods}
+software requirements.
+Design goals.
+Software design.
+
+\section{Result}
+What requirements where fulfilled?
+
+\section{Discussion}
+How did the software design and implementation meet the design goals?
+
+\section{Conclusion}
+What was archived?
+Further improvements?
+
+\appendix
+\section{Documentation}
+
+
 \end{document}
