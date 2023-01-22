@@ -1,0 +1,267 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{delsing2017arrowhead}{incollection}{}
+      \name{author}{8}{}{%
+        {{hash=21e80a3e381def1461de64d5617f05f6}{%
+           family={Delsing},
+           familyi={D\bibinitperiod},
+           given={Jerker},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f585522b0aff5aef5da8ee51adfe8fd1}{%
+           family={Varga},
+           familyi={V\bibinitperiod},
+           given={Pal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d27331bf1547787fd15bc9165ed8c989}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6a4cb32f9ff86d4a2e63abe60294012a}{%
+           family={Albano},
+           familyi={A\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=99428f2a7c71e69dd9c471a95e7c7705}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Pablo\bibnamedelima Puñal},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=2945ba17671b410b5e2b8f96b0ae493a}{%
+           family={Eliasson},
+           familyi={E\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8105d059cff04a7f809d5e721729923f}{%
+           family={Carlsson},
+           familyi={C\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c4c74bf9a057b904f9af2ea9cdf73840}{%
+           family={Derhamy},
+           familyi={D\bibinitperiod},
+           given={Hasan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{3132676759c51d24844f909ac5d6feff}
+      \strng{fullhash}{aac12db4c760dd91b1f1f144feaa26e1}
+      \strng{bibnamehash}{3132676759c51d24844f909ac5d6feff}
+      \strng{authorbibnamehash}{3132676759c51d24844f909ac5d6feff}
+      \strng{authornamehash}{3132676759c51d24844f909ac5d6feff}
+      \strng{authorfullhash}{aac12db4c760dd91b1f1f144feaa26e1}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IoT Automation}
+      \field{title}{The arrowhead framework architecture}
+      \field{year}{2017}
+      \field{pages}{79\bibrangedash 124}
+      \range{pages}{46}
+    \endentry
+    \entry{arrowheadlib}{software}{}
+      \name{author}{1}{}{%
+        {{hash=5aa48f9017ee363caced8d3ebf32b1b8}{%
+           family={eclipse-arrowhead},
+           familyi={e\bibinithyphendelim a\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{fullhash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{bibnamehash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{authorbibnamehash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{authornamehash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{authorfullhash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \field{extraname}{1}
+      \field{sortinit}{e}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{1}
+      \field{title}{application-library-java-spring}
+      \field{version}{4.4.0.2}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/eclipse-arrowhead/application-library-java-spring
+      \endverb
+      \verb{url}
+      \verb https://github.com/eclipse-arrowhead/application-library-java-spring
+      \endverb
+    \endentry
+    \entry{arrowheadcore}{software}{}
+      \name{author}{1}{}{%
+        {{hash=5aa48f9017ee363caced8d3ebf32b1b8}{%
+           family={eclipse-arrowhead},
+           familyi={e\bibinithyphendelim a\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{fullhash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{bibnamehash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{authorbibnamehash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{authornamehash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \strng{authorfullhash}{5aa48f9017ee363caced8d3ebf32b1b8}
+      \field{extraname}{2}
+      \field{sortinit}{e}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{9}
+      \field{title}{core-java-spring}
+      \field{version}{4.6.0}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/eclipse-arrowhead/core-java-spring
+      \endverb
+      \verb{url}
+      \verb https://github.com/eclipse-arrowhead/core-java-spring
+      \endverb
+    \endentry
+    \entry{IEEEUART}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=e3571722ebb08ae32bc4c2fc1fdd669c}{%
+           family={Nanda},
+           familyi={N\bibinitperiod},
+           given={Umakanta},
+           giveni={U\bibinitperiod}}}%
+        {{hash=b0504103df895d5e261cb8d4dc2f55c3}{%
+           family={Pattnaik},
+           familyi={P\bibinitperiod},
+           given={Sushant\bibnamedelima Kumar},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7ddc53daa6636c518ce7d93aa0b2bb7}
+      \strng{fullhash}{f7ddc53daa6636c518ce7d93aa0b2bb7}
+      \strng{bibnamehash}{f7ddc53daa6636c518ce7d93aa0b2bb7}
+      \strng{authorbibnamehash}{f7ddc53daa6636c518ce7d93aa0b2bb7}
+      \strng{authornamehash}{f7ddc53daa6636c518ce7d93aa0b2bb7}
+      \strng{authorfullhash}{f7ddc53daa6636c518ce7d93aa0b2bb7}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 3rd International Conference on Advanced Computing and Communication Systems (ICACCS)}
+      \field{title}{Universal Asynchronous Receiver and Transmitter (UART)}
+      \field{volume}{01}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICACCS.2016.7586376
+      \endverb
+    \endentry
+    \entry{varga2017making}{article}{}
+      \name{author}{7}{}{%
+        {{hash=f585522b0aff5aef5da8ee51adfe8fd1}{%
+           family={Varga},
+           familyi={V\bibinitperiod},
+           given={Pal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7bff8c16bec1d04ad9ec4a06578c73b3}{%
+           family={Blomstedt},
+           familyi={B\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2a1ca6e8170949536e727e9bc720628d}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Luis\bibnamedelima Lino},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2945ba17671b410b5e2b8f96b0ae493a}{%
+           family={Eliasson},
+           familyi={E\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5eab739194b2b4c8fb83f48383d65d7f}{%
+           family={Johansson},
+           familyi={J\bibinitperiod},
+           given={Mats},
+           giveni={M\bibinitperiod}}}%
+        {{hash=21e80a3e381def1461de64d5617f05f6}{%
+           family={Delsing},
+           familyi={D\bibinitperiod},
+           given={Jerker},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ab62117b484cbcc84d55aae1611d1296}{%
+           family={Soria},
+           familyi={S\bibinitperiod},
+           given={Iker\bibnamedelima Martı́nez},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{fc600a9b32260a40eb12a79b44d7f7dd}
+      \strng{fullhash}{a1f1bd324c9ad41a9b910a689aa35e5e}
+      \strng{bibnamehash}{fc600a9b32260a40eb12a79b44d7f7dd}
+      \strng{authorbibnamehash}{fc600a9b32260a40eb12a79b44d7f7dd}
+      \strng{authornamehash}{fc600a9b32260a40eb12a79b44d7f7dd}
+      \strng{authorfullhash}{a1f1bd324c9ad41a9b910a689aa35e5e}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Network and Computer Applications}
+      \field{title}{Making system of systems interoperable--The core components of the arrowhead framework}
+      \field{volume}{81}
+      \field{year}{2017}
+      \field{pages}{85\bibrangedash 95}
+      \range{pages}{11}
+    \endentry
+    \entry{varga2015service}{article}{}
+      \name{author}{2}{}{%
+        {{hash=be81a52afae33ac5060b07b04e10b831}{%
+           family={Varga},
+           familyi={V\bibinitperiod},
+           given={Pál},
+           giveni={P\bibinitperiod}}}%
+        {{hash=033850496817e4a35c0a863ed6d2debe}{%
+           family={Hegedus},
+           familyi={H\bibinitperiod},
+           given={Csaba},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{317a80a74f621acd717d4ee3591ff3d1}
+      \strng{fullhash}{317a80a74f621acd717d4ee3591ff3d1}
+      \strng{bibnamehash}{317a80a74f621acd717d4ee3591ff3d1}
+      \strng{authorbibnamehash}{317a80a74f621acd717d4ee3591ff3d1}
+      \strng{authornamehash}{317a80a74f621acd717d4ee3591ff3d1}
+      \strng{authorfullhash}{317a80a74f621acd717d4ee3591ff3d1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{5th IEEE WirelessVitae, Hyderabad, India}
+      \field{title}{Service interaction through gateways for inter-cloud collaboration within the arrowhead framework}
+      \field{year}{2015}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
