@@ -129,7 +129,86 @@ To facilitate this late binding each arrowhead local cloud needs to have a set o
 
 The systems in the cloud down to the right in figure \ref{fig:software_overview} is run in a separate arrowhead local cloud with it's own set of core systems. To be able to communicate with the other local cloud the gateway optional core system \cite{varga2015service} was used.
 
-\subfile{figures/arrowhead_system_sequence2.tex}
+\begin{figure}
+\centering
+        \resizebox{\textwidth}{!}{
+        \begin{sequencediagram}
+            \newthread{plan}{Mission planner}
+            \newthread{schedule}{Mission scheduler}
+            \newinst[3]{exec}{Mission executor}
+            \newinst{gps}{GPS interface}
+            \newinst{vision}{Vision system}
+            \newinst{nav}{Navigation system}
+            \newinst{robot}{Robot control interface}
+            \newthread{bat}{Battery estimator}
+
+            \mess{plan}{Add some mission}{schedule}
+            \begin{call}
+                {schedule}{Do some mission}{exec}{Done}
+                \begin{call}
+                    {exec}{Navigate to point}{nav}{Aborted}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \mess{bat}{Add charge mission}{schedule}
+                    \mess{schedule}{Do charge mission}{exec}
+                    \mess{exec}{Abort}{nav}
+                \end{call}
+                \mess{exec}{Add reminder of some mission}{schedule}
+                \begin{call}
+                    {exec}{Navigate to charger}{nav}{Done}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get direction}{vision}{Not visible}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get direction}{vision}{Direction}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                \end{call}
+            \end{call}
+            \begin{call}
+                {schedule}{Do remainder of some mission}{exec}{Done}
+                \begin{call}
+                    {exec}{Navigate to point}{nav}{Aborted}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Get coordinates}{gps}{Coordinates}
+                    \end{call}
+                    \begin{call}
+                        {nav}{Set track speeds}{robot}{}
+                    \end{call}
+                \end{call}
+            \end{call}
+        \end{sequencediagram}
+        }
+    \caption{Sequence diagram for snowblower robot systems executing a mission and then interrupt it with a charge mission.}
+    \label{fig:sequence2}
+\end{figure}
 
 To show how the systems may work together a sequence diagram is shown in figure \ref{fig:sequence2}.
 In the sequence diagram the robot first do a mission where it navigates to a point and is preempted by a higher priority mission to charge the robot.

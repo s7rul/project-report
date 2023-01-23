@@ -749,10 +749,6 @@ INPUT ./pictures//software_overview.png
 INPUT pictures//software_overview.png
 INPUT ./pictures//software_overview.png
 INPUT ./pictures//software_overview.png
-INPUT ./figures/arrowhead_system_sequence2.tex
-INPUT figures/arrowhead_system_sequence2.tex
-INPUT ./figures/arrowhead_system_sequence2.tex
-INPUT figures/arrowhead_system_sequence2.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
